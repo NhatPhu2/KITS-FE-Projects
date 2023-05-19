@@ -1,0 +1,335 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.menu li {
+  list-style: none;
+  padding: 16px;
+  font-size: 15px;
+}
+body,html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+}
+
+.menu {
+  margin: 0 auto;
+  display: block;
+  padding: 0;
+}
+nav {
+  width: 14%;
+  height: 800px;
+  background-color: #ffc297;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.logout {
+  margin: 0 auto;
+  display: block;
+  font-size: 20px;
+}
+
+.logout svg {
+  background-color: #ff7008;
+  border-radius: 50px;
+  padding: 6px;
+  color: white;
+}
+
+.item {
+  padding: 1em;
+}
+
+.container {
+  display: flex;
+  width: 60%;
+  border: 1px solid gainsboro;
+}
+
+.side-bar li {
+  list-style: none;
+  padding: 16px;
+  font-size: 15px;
+}
+
+.side-bar li span {
+  display: inline-block;
+  font-size: 30px;
+}
+
+.side-bar li span svg {
+  height: 27px;
+}
+
+.icon-text-sidebar {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+
+.side-br {
+  width: 30%;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+.horizontal-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ip-te {
+}
+
+.horizontal-form .ip-te label {
+  text-transform: capitalize;
+  display: block;
+}
+
+.horizontal-form .ip-te input {
+  width: 100%;
+}
+
+.horizontal-form .ip-te {
+  width: calc(100% / 2 - 20px);
+}
+
+.vertical-form label {
+  display: inline-block;
+  min-width: 100px;
+  max-width: 150px;
+  text-transform: capitalize;
+}
+
+.vertical-form input {
+  width: 100%;
+}
+
+.select label {
+  display: inline-block;
+  text-transform: capitalize;
+  width: 100%;
+}
+
+input,
+select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #858585;
+}
+
+.btn-cancel {
+  width: 80px;
+  height: 35px;
+  color: #ff7008;
+  border-color: #ff7008;
+  padding: 5px;
+  outline: none;
+  background-color: white;
+  border: 0.5px solid;
+  border-radius: 3px;
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+.btn-cancel:hover{
+    transform: rotate(20deg);
+}
+
+.btn-save {
+  width: 80px;
+  height: 35px;
+  color: white;
+  border: none;
+
+  border-radius: 3px;
+  padding: 5px;
+  outline: none;
+  background-color: #ff7008;
+}
+
+.btn {
+  margin-top: 5px;
+}
+
+.profile {
+  padding: 50px;
+}
+
+label {
+  padding: 5px;
+}
+
+.setting {
+  padding: 35px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+select {
+  text-transform: capitalize;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container .fa-square-check {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  transform: translate(-90%, -50%);
+  color: green;
+}
+
+.input-container .fa-square-xmark {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  transform: translate(-90%, -50%);
+  color: red;
+}
+
+.input-container .active{
+  display: inline-block;
+}
+
+@media screen and (max-width: 412px) {
+  .main {
+    display: block;
+    padding: 0;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+
+  nav {
+    height: 828px;
+  }
+
+  label {
+    width: 100%;
+  }
+
+  .horizontal-form .ip-te {
+    width: 100%;
+  }
+
+  .horizontal-form {
+    display: inline-block;
+  }
+
+  .item {
+    padding: 0em;
+  }
+  .menu li svg {
+    width: 30px;
+    height: 35px;
+  }
+
+  .side-bar li span {
+    display: inline-block;
+    font-size: 14px;
+  }
+
+  .side-br {
+    width: 40%;
+  }
+  .setting{
+    padding: 15px;
+  }
+
+  .icon-text-sidebar {
+    gap: 5%;
+  }
+
+  .side-bar li svg{
+    width: 30px;
+    height: 30px;
+  }
+
+  .side-bar li {
+    padding: 20px;
+  }
+
+  .side-bar{
+    padding: 0;
+  }
+
+  .profile{
+    padding: 30px;
+  }
+
+  .btn-cancel{
+    width: 70px;
+    height: 30px;
+  }
+  
+  .btn-save{
+    width: 70px;
+    height: 30px;
+  }
+}
+
+.text-edit-profile{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-edit-profile img{
+  width: 65px;
+  height: 65px;
+  border-radius: 40px;
+}
+
+.dropdown{
+  position: relative;
+}
+
+.dropdonw-menu li {
+  list-style: none;
+}
+
+.dropdonw-menu li button{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdonw-menu{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 99;
+  margin: 0;
+}
+
+.dropdown:hover .dropdonw-menu{
+  display: block;
+}
