@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine|Poppins|Nunito"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="login">
+          <div class="login-flex">
+            <div class="logo"></div>
+            <h1 class="text-login">Log In</h1>
+            <form id="login_form" action="" onsubmit="return login()">
+              <div class="input-group">
+                <label for="user-name">Username</label>
+                <input id="user-name" type="text" name="user-name"/>
+              </div>
+              <div class="input-group">
+                <div class="label-group">
+                  <label for="password">Password</label>
+                  <label for="" class="forgot-password">Forgot Password ?</label>
+                </div>
+                <span class="input-password">
+                  <input id="password" type="password" id="ip-password" name="password"/>
+                  <button onclick="showAndHidePassword()" type="button">
+                    <img src="/assets/clarity_eye-hide-line.svg" alt="">
+                  </button>
+                </span>
+              </div>
+              <button type="submit" >
+                <span>
+                    login in
+                </span>
+                <img src="/assets/design_swap-left-outlined.svg" alt="">
+            </button>
+
+                <a href="" class="ctn-with">or continue with</a>
+
+              <div class="social-login">
+                <button class="icon-google" type="button">
+                  <img src="/assets/Google.svg" alt="" />
+                </button>
+                <button class="icon-github">
+                  <img src="/assets/Github.svg" alt="" />
+                </button>
+                <button class="icon-facebook">
+                  <img src="/assets/Facebook.svg" alt="" />
+                </button>
+              </div>
+              <div class="footer-login">
+                <p href="">Don't have an account yet?</p>
+                <a href="">Sign up for free</a>
+              </div>
+            </form>
+          </div>
+          <img class="img" src="/assets/Character-working-laptop-sitting-chair.svg" alt="" />
+          <img class="img"  src="/assets/cactus.svg" alt="" />
+        </div>
+        <div class="right-block"></div>
+      </div>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
