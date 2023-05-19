@@ -97,7 +97,7 @@ fetch(`https://dummyjson.com/users/${1}`)
   });
 
 const logout = () => {
-  localStorage.removeItem("userinfo");
+  localStorage.removeItem("userInfo");
   localStorage.removeItem("token");
   window.location.replace("login.html");
 };
